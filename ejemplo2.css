@@ -1,0 +1,302 @@
+/* cuerpo */
+body {
+    font-family: gealova;
+    margin: 0;
+    padding: 0;
+    background-color: #F5ECE3;
+    
+}
+
+header {
+    position: relative;
+}
+
+/*parte de arriba de envio gratis*/
+.banner {
+    background-color: #f8e4e4;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/*encabezado*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #fff;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-item:hover {
+  color: beige;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+/*letras de encabezado*/
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+
+//**css de buscador**//
+/* Configuración general del cuerpo de la página */
+body {
+    font-family: gealova; /* Fuente personalizada */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    min-height: 100vh; /* Asegura que la página no se extienda demasiado */
+}
+
+/* Contenedor de productos en forma de cuadrícula */
+.product {
+    display: grid; /* Usa CSS Grid para organizar los productos */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 🔹 Ajuste dinámico de columnas para evitar exceso de ancho */
+    column-gap: 10px; /* 🔹 Reduce el espacio entre columnas */
+    position: relative;
+    margin: 0 auto; /* 🔹 Centra el contenido */
+    max-width: 1100px; /* 🔹 Limita el ancho total de la página */
+}
+
+/* Estilo general de cada producto */
+.item {
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Efecto al pasar el mouse sobre un producto */
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20); /* Sombra flotante */
+}
+
+/* Información del producto: texto y botón */
+.info-product {
+    padding: 15px 30px; /* Espaciado interior */
+    line-height: 2; /* Espaciado entre líneas */
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    gap: 10px; /* Espaciado entre elementos */
+}
+
+/* Botón de acción dentro del producto */
+.info-product button {
+    border: none; /* Elimina bordes */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 5px 10px; /* Espaciado interno */
+}
+
+/* Estilo del
+/*1ra parte de la pagindespues de encabezado*/
+.hero {
+    text-align: center;
+    padding: 145px 90px;
+    background-color: #fff;
+    background-image: url(logoo.jpg);
+}
+
+.hero h2 {
+    font-size: 18px;
+    color: #888;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.best-sellers {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.best-sellers h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.best-sellers h3 {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    width: 150px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    width: 150px;
+}
+
+.product-name {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.product-price {
+    font-size: 14px;
+    color: #777;
+}
+
+.best-sellers-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+//**zoom de fotos**//
+
+.zoom {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.imagen {
+    transition: transform 0.3s ease-in-out;
+    width: 200px; /* Tamaño normal */
+}
+
+.zoom:hover .imagen {
+    transform: scale(1.2); /* Aumenta un 20% */
+}
+
+
+//**pie de pagina**//
+
+footer {
+    background-color: #Eae6ca;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 23%;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/*secion*/
+/* Asegura que el contenedor esté alineado correctamente */
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Estilo del logo de inicio de sesión */
+.login-logo img {
+    width: 40px; /* Ajusta el tamaño del icono */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse sobre el logo */
+.login-logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo del logo de inicio de sesión */
+.login-logo img {
+    width: 30px; /* 🔹 Tamaño pequeño */
+    height: 30px; /* 🔹 Altura igual para que sea perfectamente circular */
+    border-radius: 50%; /* 🔹 Hace la imagen completamente redonda */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse sobre el logo */
+.login-logo img:hover {
+    transform: scale(1.1);
+}
